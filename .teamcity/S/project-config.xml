@@ -30,26 +30,6 @@
         <param name="showChanges" value="false" />
       </parameters>
     </extension>
-    <extension id="PROJECT_EXT_4" type="CloudImage">
-      <parameters>
-        <param name="agent_pool_id" value="-2" />
-        <param name="amazon-id" value="lt-0247393b9880354c5" />
-        <param name="customize-launch-template" value="true" />
-        <param name="iam-instance-profile" value="__TEMPLATE__VALUE__" />
-        <param name="image-instances-limit" value="0" />
-        <param name="image-name-prefix" value="spak-templ-test" />
-        <param name="instance-type" value="__TEMPLATE__VALUE__" />
-        <param name="key-pair-name" value="__TEMPLATE__VALUE__" />
-        <param name="launch-template-version" value="Default" />
-        <param name="profileId" value="amazon-1" />
-        <param name="security-group-ids" value="" />
-        <param name="source-id" value="spak-templ-test" />
-        <param name="subnet-id" value="__TEMPLATE__VALUE__" />
-        <param name="undefined" value="false" />
-        <param name="use-spot-instances" value="true" />
-        <param name="user-tags" value="" />
-      </parameters>
-    </extension>
     <extension id="amazon-1" type="CloudProfile">
       <parameters>
         <param name="cloud-code" value="amazon" />
