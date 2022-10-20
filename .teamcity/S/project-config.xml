@@ -9,6 +9,7 @@
         <param name="amazon-id" value="lt-0b5689014f6b6ca22" />
         <param name="customize-launch-template" value="true" />
         <param name="iam-instance-profile" value="__TEMPLATE__VALUE__" />
+        <param name="image-instances-limit" value="2" />
         <param name="image-name-prefix" value="chubatovatmpl20" />
         <param name="instance-type" value="__TEMPLATE__VALUE__" />
         <param name="key-pair-name" value="__TEMPLATE__VALUE__" />
