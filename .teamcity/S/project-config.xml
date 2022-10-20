@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="5ff5c3ca-d663-4ad5-9114-d7d2eac0dcfe" xsi:noNamespaceSchemaLocation="https://www.jetbrains.com/teamcity/schemas/2021.1/project-config.xsd">
+  <name>s</name>
+  <parameters />
+  <project-extensions>
+    <extension id="PROJECT_EXT_2" type="CloudImage">
+      <parameters>
+        <param name="agent_pool_id" value="-2" />
+        <param name="amazon-id" value="lt-0b5689014f6b6ca22" />
+        <param name="customize-launch-template" value="true" />
+        <param name="iam-instance-profile" value="__TEMPLATE__VALUE__" />
+        <param name="image-name-prefix" value="chubatovatmpl20" />
+        <param name="instance-type" value="__TEMPLATE__VALUE__" />
+        <param name="key-pair-name" value="__TEMPLATE__VALUE__" />
+        <param name="launch-template-version" value="Default" />
+        <param name="profileId" value="amazon-1" />
+        <param name="security-group-ids" value="" />
+        <param name="source-id" value="chubatovatmpl20" />
+        <param name="subnet-id" value="__TEMPLATE__VALUE__" />
+        <param name="undefined" value="false" />
+        <param name="user-tags" value="" />
+      </parameters>
+    </extension>
+    <extension id="PROJECT_EXT_3" type="versionedSettings">
+      <parameters>
+        <param name="buildSettings" value="ALWAYS_USE_CURRENT" />
+        <param name="credentialsStorageType" value="credentialsJSON" />
+        <param name="enabled" value="true" />
+        <param name="rootId" value="S_HttpsGithubComChubatovaTigerVsEc2tmpl" />
+        <param name="showChanges" value="false" />
+      </parameters>
+    </extension>
+    <extension id="amazon-1" type="CloudProfile">
+      <parameters>
+        <param name="cloud-code" value="amazon" />
+        <param name="description" value="" />
+        <param name="enabled" value="true" />
+        <param name="name" value="ec2" />
+        <param name="profileId" value="amazon-1" />
+        <param name="region" value="eu-west-1" />
+        <param name="secure:access-id" value="credentialsJSON:4beae01f-e792-458f-8098-97f6c5e02104" />
+        <param name="secure:secret-key" value="credentialsJSON:708c341d-1526-43dd-b8dc-c7b57dc18729" />
+        <param name="terminate-idle-time" value="30" />
+      </parameters>
+    </extension>
+  </project-extensions>
+  <cleanup />
+</project>
+
