@@ -1,0 +1,1 @@
+# vs_ec2tmpl
