@@ -24,6 +24,7 @@
     </extension>
     <extension id="PROJECT_EXT_5" type="CloudImage">
       <parameters>
+        <param name="agent_pool_id" value="-2" />
         <param name="amazon-id" value="ami-057a4b45218ec9769" />
         <param name="image-name-prefix" value="mmm" />
         <param name="instance-type" value="t2.medium" />
