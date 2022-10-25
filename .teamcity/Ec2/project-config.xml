@@ -22,6 +22,16 @@
         <param name="showChanges" value="false" />
       </parameters>
     </extension>
+    <extension id="PROJECT_EXT_5" type="CloudImage">
+      <parameters>
+        <param name="amazon-id" value="ami-057a4b45218ec9769" />
+        <param name="image-name-prefix" value="mmm" />
+        <param name="instance-type" value="t2.medium" />
+        <param name="profileId" value="amazon-1" />
+        <param name="security-group-ids" value="sg-1cdaad75," />
+        <param name="source-id" value="mmm" />
+      </parameters>
+    </extension>
     <extension id="amazon-1" type="CloudProfile">
       <parameters>
         <param name="cloud-code" value="amazon" />
@@ -32,6 +42,7 @@
         <param name="region" value="us-east-1" />
         <param name="secure:access-id" value="credentialsJSON:22283d83-b64e-4149-b16f-8f3eba562cb3" />
         <param name="secure:secret-key" value="credentialsJSON:c8369df2-4742-4785-a4bf-493b9ca875af" />
+        <param name="system.cloud.profile_id" value="amazon-1" />
         <param name="terminate-idle-time" value="30" />
       </parameters>
     </extension>
