@@ -5,6 +5,7 @@
   <project-extensions>
     <extension id="PROJECT_EXT_3" type="CloudImage">
       <parameters>
+        <param name="agent_pool_id" value="-2" />
         <param name="amazon-id" value="lt-0435e6b9962b39280" />
         <param name="customize-launch-template" value="true" />
         <param name="iam-instance-profile" value="__TEMPLATE__VALUE__" />
