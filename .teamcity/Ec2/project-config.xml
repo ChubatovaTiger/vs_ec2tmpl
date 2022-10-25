@@ -3,6 +3,23 @@
   <name>ec2</name>
   <parameters />
   <project-extensions>
+    <extension id="PROJECT_EXT_3" type="CloudImage">
+      <parameters>
+        <param name="amazon-id" value="lt-0435e6b9962b39280" />
+        <param name="customize-launch-template" value="true" />
+        <param name="iam-instance-profile" value="__TEMPLATE__VALUE__" />
+        <param name="image-name-prefix" value="tmpl2" />
+        <param name="instance-type" value="t2.medium" />
+        <param name="key-pair-name" value="__TEMPLATE__VALUE__" />
+        <param name="launch-template-version" value="Latest" />
+        <param name="profileId" value="amazon-1" />
+        <param name="security-group-ids" value="" />
+        <param name="source-id" value="tmpl2" />
+        <param name="subnet-id" value="__TEMPLATE__VALUE__" />
+        <param name="user-script" value="echo a" />
+        <param name="user-tags" value="" />
+      </parameters>
+    </extension>
     <extension id="PROJECT_EXT_4" type="versionedSettings">
       <parameters>
         <param name="buildSettings" value="ALWAYS_USE_CURRENT" />
@@ -21,25 +38,6 @@
         <param name="profileId" value="amazon-1" />
         <param name="security-group-ids" value="sg-1cdaad75," />
         <param name="source-id" value="mmm" />
-      </parameters>
-    </extension>
-    <extension id="PROJECT_EXT_6" type="CloudImage">
-      <parameters>
-        <param name="agent_pool_id" value="-2" />
-        <param name="amazon-id" value="lt-0435e6b9962b39280" />
-        <param name="customize-launch-template" value="true" />
-        <param name="iam-instance-profile" value="__TEMPLATE__VALUE__" />
-        <param name="image-instances-limit" value="2" />
-        <param name="image-name-prefix" value="tmpl" />
-        <param name="instance-type" value="t2.medium" />
-        <param name="key-pair-name" value="__TEMPLATE__VALUE__" />
-        <param name="launch-template-version" value="Default" />
-        <param name="profileId" value="amazon-1" />
-        <param name="security-group-ids" value="" />
-        <param name="source-id" value="tmpl" />
-        <param name="subnet-id" value="__TEMPLATE__VALUE__" />
-        <param name="undefined" value="false" />
-        <param name="user-tags" value="" />
       </parameters>
     </extension>
     <extension id="amazon-1" type="CloudProfile">
