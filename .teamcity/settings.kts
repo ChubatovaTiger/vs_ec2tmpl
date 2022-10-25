@@ -1,5 +1,4 @@
 import jetbrains.buildServer.configs.kotlin.*
-import jetbrains.buildServer.configs.kotlin.amazonEC2CloudImage
 import jetbrains.buildServer.configs.kotlin.amazonEC2CloudProfile
 
 /*
@@ -29,28 +28,6 @@ version = "2022.04"
 project {
 
     features {
-        amazonEC2CloudImage {
-            id = "PROJECT_EXT_3"
-            profileId = "amazon-1"
-            agentPoolId = "-2"
-            name = "tmpl2"
-            vpcSubnetId = "__TEMPLATE__VALUE__"
-            iamProfile = "__TEMPLATE__VALUE__"
-            keyPairName = "__TEMPLATE__VALUE__"
-            instanceType = "t2.medium"
-            userScript = "echo a"
-            customizeLaunchTemplate = true
-            source = LaunchTemplate(templateId = "lt-0435e6b9962b39280", version = AmazonEC2CloudImage.LATEST_VERSION)
-        }
-        amazonEC2CloudImage {
-            id = "PROJECT_EXT_5"
-            profileId = "amazon-1"
-            agentPoolId = "-2"
-            name = "mmm"
-            instanceType = "t2.medium"
-            securityGroups = listOf("sg-1cdaad75")
-            source = Source("ami-057a4b45218ec9769")
-        }
         amazonEC2CloudProfile {
             id = "amazon-1"
             name = "ec2"
